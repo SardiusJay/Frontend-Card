@@ -26,6 +26,6 @@ Any suggestion's welcomed. Please let me know if you have anything to add!
 
 ## Author
 
-- Website - [Dogan Saglam -Dawn-](https://github.com/dsaglam94)
-- Frontend Mentor - [@dsaglam94](https://www.frontendmentor.io/profile/dsaglam94)
-- Twitter - [@dsaglam94](https://twitter.com/dsaglam94)
+- Website - [Sardiusjay](https://github.com/sardiusjay)
+- Frontend Mentor - [@Sardiusjay](https://www.frontendmentor.io/profile/sardiujay)
+- Twitter - [@Sardiusjay](https://twitter.com/sardiusjay)
