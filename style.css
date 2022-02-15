@@ -1,0 +1,261 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* ---------------------- */
+/* Custom properties ---- */
+/* ---------------------- */
+
+:root {
+
+    --clr-red: 0, 78%, 62%;
+    --clr-blue: 212, 86%, 64%;
+    --clr-cyan: 180, 62%, 55%;
+    --clr-orange: 34, 97%, 64%;
+
+    --clr-darkblue: 234, 12%, 34%;
+    --clr-grayblue: 229, 6%, 66%;
+    --clr-lightgray: 0, 0%, 98%;
+
+    --ff-poppins: 'Poppins', sans-serif;
+
+    --fs-200: 0.75rem;
+    --fs-300: 0.9rem;
+    --fs-400: 1rem;
+    --fs-500: 1.25rem;
+    --fs-600: 1.5rem;
+    --fs-700: 1.5rem;
+
+    --fw-200: 200;
+    --fw-400: 400;
+    --fw-600: 600;
+
+}
+
+/* ---------------------- */
+/* Reset ---------------- */
+/* ---------------------- */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset Margin & Padding */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+/* make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* colors */
+
+.bg-lightgray { background-color: hsl(var(--clr-lightgray)); }
+
+.text-darkblue { color: hsl(var(--clr-darkblue)); }
+
+/* Typography */
+
+.fs-300 { font-size: var(--fs-300); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-700 { font-size: var(--fs-700); }
+
+.fw-200 { font-weight: var(--fw-200); }
+.fw-400 { font-weight: var(--fw-400); }
+.fw-600 { font-weight: var(--fw-600); }
+
+
+/* set up body */
+body {
+    font-family: var(--ff-poppins);
+    background-color: hsl(var(--clr-lightgray));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: hsl(var(--clr-darkblue));
+}
+
+p {
+    color: hsl(var(--clr-grayblue));
+    font-size: var(--fs-300);
+}
+
+.header {
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header p {
+    padding: 1rem 0 4rem 0;
+}
+
+/* Containers */
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-main-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.mid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+}
+
+.card-main-container img {
+    align-self: flex-end;
+    width: 65px;
+}
+
+.card-main-container p {
+    padding-bottom: 2.5rem;
+}
+
+/* Cards */
+.card--supervisor,
+.card--team-builder,
+.card--karma,
+.card--calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 370px;
+    height: 250px;
+    background-color: hsl(var(--clr-lightgray));
+    padding: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0px 11px 17px 2px rgba(0,0,0,0.20);
+}
+
+/* Top-Border */
+.card--supervisor {
+    border-top: 4px solid hsl(var(--clr-cyan));
+}
+.card--team-builder {
+    border-top: 4px solid hsl(var(--clr-red));
+}
+.card--karma {
+    border-top: 4px solid hsl(var(--clr-orange));
+}
+.card--calculator {
+    border-top: 4px solid hsl(var(--clr-blue));
+}
+
+/* ---------------------- */
+/* Media Queries -------- */
+/* ---------------------- */
+
+
+@media (max-width: 820px) {
+    .header {
+        width: 100%;
+    }
+
+    .header h1 {
+        font-size: var(--fs-600);
+    }
+
+    .header p {
+        width: 75%;
+        font-size: var(--fs-300);
+    }
+
+    .card-main-container {
+        flex-direction: column;
+    }
+    
+    .card-main-container img {
+        width: 45px;
+    }
+
+    .card-main-container p {
+        padding-bottom: 1.5rem;
+        font-size: var(--fs-200);
+    }
+    
+    .card--supervisor,
+    .card--team-builder,
+    .card--karma,
+    .card--calculator {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        padding: 2rem;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .header h1 {
+        font-size: var(--fs-600);
+    }
+
+    .header p {
+        width: 75%;
+        font-size: var(--fs-300);
+    }
+
+    .card-main-container {
+        flex-direction: column;
+    }
+    
+    .card-main-container img {
+        width: 45px;
+    }
+
+    .card-main-container p {
+        padding-bottom: 1.5rem;
+        font-size: var(--fs-200);
+    }
+    
+    .card--supervisor,
+    .card--team-builder,
+    .card--karma,
+    .card--calculator {
+        width: 300px;
+        height: 200px;
+    }
+}
